@@ -8,6 +8,8 @@ const movieSchema = new mongoose.Schema({
     release_date: String,
     rating: Number,
     reviews_count: Number
+}, {
+    timestamps: true
 })
 
 module.exports = mongoose.model('movierealmdb', movieSchema)
